@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
+import './Styles.css';
+import Navbar from './components/Navbar'
+import Home from './Pages/Home'
+import Destination from './Pages/Destination'
+import Crew from './Pages/Crew'
+import Technology from './Pages/Technology'
+import NotFound from './Pages/NotFound';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+       <div className="app">
+         <Navbar />
+       </div>
+       <Routes>
+          <Route path='/' element= {<Home />} />
+          <Route path='/destination/*' element= {<Destination />} />
+          <Route path='/destination' element= {<Navigate to="/destination/moon" />} />
+          <Route path='/crew/*' element= {<Crew />} />
+          <Route path='/crew' element= {<Navigate to="/crew/commander" />} />
+          <Route path='/technology/*' element= {<Technology />} />
+          <Route path='/technology' element= {<Navigate to="/technology/vehicle" />} />
+          <Route path='*' element= {<NotFound />} />
+       </Routes>
+    </BrowserRouter>
   );
 }
 
