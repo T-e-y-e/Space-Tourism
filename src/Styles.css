@@ -16,17 +16,17 @@ h1, h2, h3, h4, h6{
 }
 
 h1{
-  font-size: 140px;
+  font-size: 8.75rem;
 }
 
 h2{
-  font-size: 75px;
+  font-size: 4.6875rem;
   text-transform: uppercase;
   color: white;
 }
 
 h5{
-  font-size: 26px;
+  font-size: 1.625rem;
   letter-spacing: 4.75px;
   text-transform: uppercase;
   color: rgb(208, 214, 249);
@@ -34,7 +34,7 @@ h5{
 
 h6{
   text-transform: uppercase;
-  font-size: 26px;
+  font-size: 1.625rem;
   color: white;
 }
 
@@ -91,7 +91,7 @@ p{
 
 .navbar-nav .nav-item .nav-link{
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 2.7px;
   padding: 1rem 0;
   width: max-content;
@@ -162,7 +162,7 @@ p{
 .page-intro{
   color: white;
   margin-top: -100px;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .page-num{
@@ -214,7 +214,7 @@ p{
 .dest-nav .nav-link{
    color: rgb(208, 214, 249);
    text-transform: uppercase;
-   font-size: 16px;
+   font-size: 1rem;
    letter-spacing: 2.7px;
    padding: 0.4rem 0;
    width: max-content;
@@ -300,7 +300,7 @@ p{
 }
 
 .crew-name{
-  font-size: 50px;
+  font-size: 3.125rem;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
 }
@@ -324,7 +324,7 @@ p{
 }
 
 .techPage h6{
-  font-size: 50px;
+  font-size: 3.125rem;
 }
 
 .tech-nav{
@@ -403,7 +403,7 @@ p{
 }
 
 .notFound h3{
-  font-size: 60px;
+  font-size: 3.75rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -687,7 +687,7 @@ h1{
 }
 
 h2{
-  font-size: 55px;
+  font-size: 3.4rem;
 }
 
 h5{
@@ -695,7 +695,7 @@ h5{
 }
 
 h6{
-  font-size: 20px;
+  font-size: 1.25rem;
 }
   p{
     font-size: 15px;
@@ -753,7 +753,7 @@ h6{
   }
 
   .page-intro{
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
   }
 
@@ -782,7 +782,7 @@ h6{
 }
 
 .dest-nav .nav-link{
-  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 2px;
 }
 
@@ -801,11 +801,11 @@ h6{
 }
 
 .destPage .travel p{
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .dest-desc{
-  margin-top: 50px;
+  margin-top: 40px;
   padding-bottom: 20px;
 }
 
@@ -872,7 +872,7 @@ h6{
 }
 
 .techPage h6{
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 .tech-img1, .tech-img3{
