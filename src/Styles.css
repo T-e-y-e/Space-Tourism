@@ -884,4 +884,22 @@ h6{
 }
 }
 
+@media screen and (min-height: 840px) {
+  .homePage{
+     height: 100vh;
+  }
+
+  .destPage{
+    height: 100vh;
+  }
+
+  .crewPage{
+    height: 100vh;
+  }
+
+  .techPage{
+    height: 100vh;
+  }
+}
+
 
