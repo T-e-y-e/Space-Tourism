@@ -406,6 +406,11 @@ p{
   font-size: 60px;
 }
 
+@media screen and (max-width: 1024px) {
+  .strikethrough{
+    display: none;
+ }
+}
 
 @media screen and (max-width: 992px) {
   /* PAGES */
@@ -430,10 +435,6 @@ p{
     top: 0;
     padding-top: 0;
     align-items: flex-start;
-  }
-  
-  .strikethrough{
-     display: none;
   }
 
   .navbar .container-fluid{
@@ -656,23 +657,33 @@ p{
   /* PAGES */
 .homePage{
   background-image: url('./assets/home/background-home-mobile.jpg');
-}
-
-.crewPage{
-  background-image: url('./assets/crew/background-crew-mobile.jpg');
+  height: max-content;
+  padding-top: 120px;
 }
 
 .destPage{
   background-image: url('./assets/destination/background-destination-mobile.jpg');
+  height: max-content;
+  padding-top: 80px;
+}
+
+.crewPage{
+  background-image: url('./assets/crew/background-crew-mobile.jpg');
+  height: max-content;
+  padding-top: 180px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .techPage{
   background-image: url('./assets/technology/background-technology-mobile.jpg');
+  height: max-content;
+  padding-top: 180px;
 }
 
 h1{
   margin-top: 20px;
-  font-size: 95px;
+  font-size: 5.95rem;
 }
 
 h2{
@@ -680,14 +691,14 @@ h2{
 }
 
 h5{
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 h6{
   font-size: 20px;
 }
   p{
-    font-size: 14px;
+    font-size: 15px;
   }
 
   /* NAVBAR */
@@ -767,7 +778,7 @@ h6{
 }
 
 .dest-nav{
-  bottom: 46%;
+  bottom: 43%;
 }
 
 .dest-nav .nav-link{
@@ -775,8 +786,14 @@ h6{
   letter-spacing: 2px;
 }
 
+.dest-header{
+  grid-template-columns: auto;
+}
+
 .destPage .page-intro{
-  top: 180px;
+  position: static;
+  margin-top: 0;
+  margin-bottom: 1.875rem;
 }
 
 .dest-img{
@@ -807,12 +824,12 @@ h6{
 
 .crewPage .page-intro{
   position: static;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .crewDetails .desc{
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 
 .crew-name{
