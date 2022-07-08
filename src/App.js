@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 import './Styles.css';
 import Navbar from './components/Navbar'
 import Home from './Pages/Home'
@@ -9,7 +9,7 @@ import NotFound from './Pages/NotFound';
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
        <div className="app">
          <Navbar />
        </div>
@@ -23,7 +23,7 @@ function App() {
           <Route path='/technology' element= {<Navigate to="/technology/vehicle" />} />
           <Route path='*' element= {<NotFound />} />
        </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
